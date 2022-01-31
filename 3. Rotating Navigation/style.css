@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #14150f;
+  color: #cccccc;
+}
+
+.container {
+  background: white;
+  color: #14150f;
+  width: 100vw;
+  padding: 4rem;
+  transition: 0.5s ease;
+}
+
+.container.rotate {
+  transform: rotate(-20deg);
+  transform-origin: top left;
+}
+
+nav.rotate {
+  transform: rotate(-20deg);
+  transform-origin: top left;
+}
+
+.circle-container {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  background-color: #ff7979;
+  border-radius: 50%;
+  z-index: 1;
+  color: white;
+  position: relative;
+  transition: 0.3s linear;
+}
+
+.circle.rotate {
+  transform: rotate(-90deg);
+}
+
+.ham {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#shownav {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+}
+
+#nonav {
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  padding-top: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+small {
+  font-style: italic;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 1.75rem 0;
+}
+
+ul li + li {
+  margin-left: 1rem;
+}
+
+ul li + li + li {
+  margin-left: 2rem;
+}
+
+li i {
+  font-size: 1.5rem;
+}
+
+li i a {
+  text-decoration: none;
+  margin-left: 0.75rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+}

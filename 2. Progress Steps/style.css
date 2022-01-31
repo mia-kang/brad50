@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --blue: #3498db;
+  --grey: #e0e0e0;
+  --light-grey: #f6f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background: var(--light-grey);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 370px;
+  height: 3rem;
+  position: relative;
+}
+
+.container::before {
+  content: '';
+  width: 100%;
+  z-index: -1;
+  background: var(--grey);
+  position: absolute;
+  height: 4px;
+  top: 50%;
+  left: 0;
+}
+
+.progress {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: var(--blue);
+  height: 4px;
+  top: 50%;
+  left: 0;
+  transition: 0.4s ease;
+}
+
+.circle {
+  color: var(--grey);
+  background: var(--light-grey);
+  border-radius: 50%;
+  border: var(--grey) 3.5px solid;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border: var(--blue) 3.5px solid;
+}
+
+.btn {
+  display: flex;
+  margin-top: 1rem;
+}
+
+button {
+  background: var(--blue);
+  width: 6rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: #f6f7fb;
+  border-radius: 7px;
+}
+
+button:disabled {
+  background: var(--grey);
+  cursor: not-allowed;
+}
