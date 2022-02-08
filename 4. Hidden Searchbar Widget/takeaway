@@ -1,0 +1,23 @@
+1. 배경화면 리니어 그라디언트
+    🍕 linear-gradient(deg, color1, color2)
+            background: linear-gradient(75deg, color 1, color2));
+
+2. 포커스는 아웃라인
+    🍔 :focus (outline : none)
+            .input:focus,
+            .btn:focus {
+            outline: none;
+            }
+
+3. X축으로 이동은 트랜스폼
+    🍟 transform : translateX(px)
+            .search.active .btn {
+            transform: translateX(200px);
+            }
+
+4. 포커스 상태로 만들고 싶으면(커서가 가 있도록)
+    🌭 input.focus();
+            btn.addEventListener('click', ()=> {
+                search.classList.toggle('active');
+                input.focus();
+            })
