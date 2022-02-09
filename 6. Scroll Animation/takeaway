@@ -1,0 +1,14 @@
+🥗 box-shadow: 2px 2px 2px grey;
+                    offset blur 색
+
+🥙 .box:nth-of-type(even) {
+
+🥪 window.addEventListener('scroll', checkBoxes);
+    윈도우 스크롤
+
+🌮 const bottom = window.innerHeight / 5 * 4; 
+    윈도우.innerHeight
+
+🌯 const top = box.getBoundingClientRect().top;
+    개체.getBoundingClientRect().top (bottom)
+
